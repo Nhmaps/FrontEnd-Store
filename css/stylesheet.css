@@ -188,12 +188,19 @@ h3 {
   margin: 0;
 }
 
-/* Pagina de Producto */
-
 /* Pagina de producto formulario */
 .formulario {
+  display: grid;
+  gap: 2rem;
 }
 .formulario__campo {
+  border: 1rem solid var(--primarioOscuro);
+  background-color: transparent;
+  color: var(--blanco);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
 }
 .formulario__submit {
   background-color: var(--secundario);
@@ -230,5 +237,13 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
+  }
+
+  .formulario {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formulario__submit {
+    grid-column: 1 / 3;
   }
 }
